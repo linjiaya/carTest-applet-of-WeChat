@@ -1,0 +1,26 @@
+/**index.wxss**/
+input{
+  border:1px solid red;
+  width: 90%;
+  padding: 5px;
+  height: 30px;
+  line-height: 30px;
+}
+.QuesDiv{
+  padding:5px;
+}
+.question{
+  font-size: 20px;
+  color: #1AAD19;
+}
+.items{
+  line-height: 20px;
+  padding:0 0 3px 30px;
+}
+.explains{
+  background-color: goldenrod;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: wrap;
+}

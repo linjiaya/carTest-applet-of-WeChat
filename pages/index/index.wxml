@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="">
+  <!-- <input placeholder="请输入运单号" bindinput="inputFuc"/> -->
+  <button type="primary" bindtap="btnClick"> 查询 </button>
+  <scroll-view scroll-x scroll-y style="height: 400px;">
+    <view class="QuesDiv" wx:for="{{msg.data.result}}">
+      <text>( {{index}} )</text>
+      <text class="question">问：{{item.question}}\n</text>
+      <text class="items">A、 {{item.item1}}\n</text>
+      <text class="items">B、 {{item.item2}}\n</text>
+      <text class="items" wx:if="{{item.item3}}">C、 {{item.item3}}\n</text>
+      <text class="items" wx:if="{{item.item4}}">D、 {{item.item4}}\n</text>
+      <text class="explains">explains: {{item.explains}}\n\n</text>
+    </view>
+  </scroll-view>
+</view>
